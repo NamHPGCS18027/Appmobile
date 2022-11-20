@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="titleName" type="id" />
+    <item name="detailtripname" type="id" />
+    <item name="tripDestination" type="id" />
+    <item name="detailtripDestination" type="id" />
+    <item name="detailtripdate" type="id" />
+    <item name="triptype" type="id" />
+    <item name="detailtype" type="id" />
+    <item name="titleDescription" type="id" />
+    <item name="detailDescription" type="id" />
+    <item name="tripdate" type="id" />
+    <item name="UpdateBtn" type="id" />
+    <item name="tripid" type="id" />
+    <item name="DeleteBtn" type="id" />
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ex_layout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tyleEXtrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/timeEXtrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time : "
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tyleEXtrip"
+                app:layout_constraintTop_toBottomOf="@+id/tyleEXtrip"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/timeEXvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20:20"
+                android:textSize="15dp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toEndOf="@+id/timeEXtrip"
+                app:layout_constraintTop_toBottomOf="@+id/tyleEXtrip"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/EXtripprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20.000 VND"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.812"
+                app:layout_constraintStart_toEndOf="@+id/tyleEXtrip"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="5dp" />
+
+            <ImageView
+                android:id="@+id/deleteExbtn"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.837"
+                app:layout_constraintStart_toEndOf="@+id/EXtripprice"
+                app:layout_constraintTop_toTopOf="@+id/EXtripprice"
+                app:srcCompat="@drawable/ic_delete_ex" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
